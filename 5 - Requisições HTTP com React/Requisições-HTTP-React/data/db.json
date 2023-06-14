@@ -24,6 +24,11 @@
       "name": "Teste",
       "price": "12",
       "id": 5
+    },
+    {
+      "name": "Petisco",
+      "price": "5.50",
+      "id": 6
     }
   ]
 }
