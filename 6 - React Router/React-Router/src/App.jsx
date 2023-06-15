@@ -1,11 +1,12 @@
 import "./App.css";
+// 1 - config react router
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Product from "./pages/Product";
+// components
+import Navbar from "./components/Navbar";
 // Pages
 import Home from "./pages/Home";
 import About from "./pages/About";
-// components
-import Navbar from "./components/Navbar";
-// 1 - config react router
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          {/* 4 - rota dinâmica */}
+          <Route path="/products/:id" element={<Product />} />
         </Routes>
       </BrowserRouter>
     </>
