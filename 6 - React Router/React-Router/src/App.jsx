@@ -4,11 +4,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Product from "./pages/Product";
 // components
 import Navbar from "./components/Navbar";
+import SearchForm from "./components/SearchForm";
 // Pages
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Info from "./pages/Info";
 import NotFound from "./pages/NotFound";
+import SearchPage from "./pages/SearchPage";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
       <BrowserRouter>
         {/* 2 - links com react router */}
         <Navbar />
+        {/* 9 - search */}
+        <SearchForm />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -24,6 +28,8 @@ function App() {
           <Route path="/products/:id/info" element={<Info />} />
           {/* 4 - rota dinâmica */}
           <Route path="/products/:id" element={<Product />} />
+          {/* 9 - search */}
+          <Route path="/search" element={<SearchPage />} />
           {/* 7 - no match route */}
           <Route path="*" element={<NotFound />} />
         </Routes>
