@@ -1,6 +1,6 @@
 import "./App.css";
 // 1 - config react router
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Product from "./pages/Product";
 // components
 import Navbar from "./components/Navbar";
@@ -30,6 +30,8 @@ function App() {
           <Route path="/products/:id" element={<Product />} />
           {/* 9 - search */}
           <Route path="/search" element={<SearchPage />} />
+          {/* 10 - redirect */}
+          <Route path="/company" element={<Navigate to="/about" />} />
           {/* 7 - no match route */}
           <Route path="*" element={<NotFound />} />
         </Routes>
