@@ -20,3 +20,12 @@ nav a:hover {
   text-decoration: underline;
   color: chartreuse;
 }
+
+.esta-ativo {
+  text-decoration: underline;
+  color: chartreuse;
+}
+
+.nao-ativo {
+  color: #f2f2f2;
+}
