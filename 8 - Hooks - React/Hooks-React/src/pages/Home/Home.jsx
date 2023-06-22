@@ -19,6 +19,7 @@ const Home = () => {
       <h2>useContext</h2>
       <p>Valor do contexto: {contextValue}</p>
       <hr />
+      <HookUseRef />
     </div>
   );
 };
